@@ -25,13 +25,12 @@ def zero_padding(sinal, quantidade_zeros=None):
     # novo array preenchido com zeros
     sinal_padded = np.zeros(N_novo, dtype=sinal.dtype)
     
-    # Copia o sinal original para o início com os zeros no final
+    # sinal original para o início com os zeros no final
     sinal_padded[:N_original] = sinal
 
     return sinal_padded
 
 
-    
 def fft_dec(x):
 
     N = len(x)
